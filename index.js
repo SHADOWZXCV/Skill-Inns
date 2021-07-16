@@ -38,9 +38,9 @@ app.post('/signup', SignupAuth)
 
 // react config
 app.use(express.static(path.join(__dirname, './src/views')))
-app.get('*', (req,res,next)=> {
-    console.log('sending user to the react app!');
-    res.sendFile(path.join(__dirname,'./src/views'))
+app.get('/', (req,res,next)=> {
+    console.log('sending user to the react app!')
+    res.sendFile(path.join(__dirname,'./src/views/index.html'))
 })
 
 app.listen(process.env.MODE === 'DEVELOPMENT' ? process.env.DEV_PORT : process.env.PROD_PORT, ()=> {
