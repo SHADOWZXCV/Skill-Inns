@@ -26,7 +26,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
-app.use(cors({credentials: true, origin: 'http://localhost:8080'}))
+app.use(cors({credentials: true, origin: '*'}))
 
 
 
@@ -39,6 +39,7 @@ app.post('/signup', SignupAuth)
 // react config
 app.use(express.static(path.join(__dirname, './src/views')))
 app.get('*', (req,res,next)=> {
+    console.log('sending user to the react app!');
     res.sendFile(path.join(__dirname,'./src/views'))
 })
 
