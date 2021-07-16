@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.container-main {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Josefin Sans';
+    background: #2D2934;
+    overflow-x: hidden;
+}
+.container-main {
+    height: 100%;
+}
+
+#root {
+    height: 100%;
+}
+
+
+/* Temporary */
+
+#logo_p:hover {
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo_p {
+    margin-left: 35px;
+    letter-spacing: 5px;
+}
+.nav-bar a {
+    margin-right: 40px;
+    font-size: 1.1em;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: white;
+ }
+
+.section-landing {
+    font-family: Nunito;
+    height: 100%;
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 70%;
+    font-weight: bold;
+    margin-left: 5%;
+    margin-top: 120px;
+}
+.left-side h1 {
+    margin: 0;
+    font-size: 1.7em;
+}
+.left-side p {
+    font-weight: 100;
+    font-size: 15px;
+    color: #8A7F9E;
+}
+
+.buttons-container {
+    margin-top: 70px;
+    color: #46414F;
+}
+
+.features-btn {
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    width: 150px;
+    height: 60px;
+    font-family: 'Josefin Sans';
+    font-size: 1.1em;
+    font-weight: normal;
+    margin: 10px;
+    margin-right: 20px;
+    color: #3A3A3B;
+    background: white;
+
+}
+.create-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 100px;
+    width: 200px;
+    height: 60px;
+    font-family: 'Josefin Sans';
+    font-size: 1.1em;
+    font-weight: normal;
+    background: #F7EC86;
+    color: #3A3A3B;
+}
+
+.create-btn:hover, .features-btn:hover {
+    cursor: pointer;
+}
+
+.animated-content {
+    height: 80%;
+}
+.animated-features,.animated-create {
+    display: inline-block;
+}
+
+.right-side {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+.dice {
+    width: 70%;
+
+}
+.chess {
+    margin-left: -20px;
+    margin-right: 40px;
+    width: 60%;
+}
+
+footer {
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #8A7F9E;
+    margin: 15px;
+}
+
+.signin-page {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #11111137;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.signin-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #302C35;
+    border: solid 5px #8A7F9E;
+    border-radius: 20px;
+    padding: 50px;
+    width: 572px;
+    height: 325px;
+    margin-left: 70px;
+
+}
+
+.row-1-signin {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cancel {
+    margin-right: 20px;
+    cursor: pointer;
+}
+.cancel:hover {
+    color: red;
+}
+.signin-h1 {
+    margin: 5px 0;
+    font-size: 1.8em;
+}
+
+.form-signin {
+    margin-top: 5%
+}
+
+.email, .password {
+    display: block;
+    width: 362px;
+    margin: 15px 0;
+    padding: 20px;
+    background: #130A2320;
+    border: 0;
+    color: #BDB2DA;
+    font-family: 'Josefin Sans';
+    border: solid 2px #8A7F9E20;
+    font-size: 1em;
+}
+
+
+.email:focus, .password:focus {
+    border: solid 2px #130A2320;
+}
+.checkbox {
+    margin-top: 20px;
+}
+.procceed {
+    display: block;
+    font-family: 'Josefin Sans';
+    color: #3A3A3B;
+    background: #F7EC86;
+    border: none;
+    width: 140px;
+    height: 52px;
+    border-radius: 40px;
+    font-size: 1em;
+    margin: 30px 0;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Errors */
+.error {
+    color: #D9353A;
+    margin: 0;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 950px){
+    .chess {
+        position: absolute;
+        left: -30px;
+        width: 20%;
+    }
+    .dice {
+        margin-left: 120px;
+    }
+    .left-side {
+        margin-left: 170px;
+        margin-top: 20px;
+        font-size: 1.4em;
+        text-align: center;
+    }
+    .left-side p {
+        line-height: 1.7em;
+        font-size: 14px;
+    }
+    .buttons-container {
+        font-size: .7em;
+        margin-top: 60px;
+    }
+    .features-btn {
+        width: 120px;
+        height: 50px;
+    }
+    .create-btn {
+        width: 200px;
+        height: 50px;
+    }
+    footer {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .email, .passsword {
+        width: 312px;
+    }
+
+    .dice {
+        margin-left: 100px;
+    }
+    .left-side {
+        margin-left: 170px;
+        margin-top: 20px;
+        font-size: 1.1em;
+        text-align: center;
+    }
+    .left-side p {
+        line-height: 1.7em;
+        font-size: 12px;
+    }   
+}
+
+@media only screen and (max-width:700px){
+    .left-side {
+        width: 60%;
+        justify-content: center;
+        /* align-items: center; */
+        margin: auto;
+    }
+    .right-side {
+        display: none;
+    }
+    .buttons-container {
+        margin-top: 20px;
+    }
+}
