@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "build-reactx": "cd src && npm run build",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build-reactx"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm build-reactx"
   },
   "keywords": [],
   "author": "",
