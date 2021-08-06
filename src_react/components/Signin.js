@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
-import { FaTimes } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa"
 
 // animation
 import { useSpring, animated } from 'react-spring'
